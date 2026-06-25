@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daniel Prajsnar — Web Developer</title>
+<meta name="description" content="Daniel Prajsnar — tworzę nowoczesne strony internetowe dla firm, szkół i lokalnych organizacji.">
+
+<!-- Czcionki -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================================ -->
+<!-- TŁO: delikatna siatka punktowa (czysto wizualne) -->
+<!-- ============================================ -->
+<div class="bg-grid" aria-hidden="true"></div>
+
+<!-- ============================================ -->
+<!-- NAWIGACJA -->
+<!-- ============================================ -->
+<header class="nav">
+  <div class="nav__inner">
+    <a href="#" class="nav__logo">DP<span class="nav__logo-dot">.</span></a>
+    <nav class="nav__links">
+      <a href="#projekty">Projekty</a>
+      <a href="#o-mnie">O mnie</a>
+      <a href="#kontakt" class="nav__cta">Kontakt</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============================================ -->
+  <!-- SEKCJA HERO -->
+  <!-- ============================================ -->
+  <section class="hero">
+    <div class="hero__inner">
+      <p class="eyebrow"><span class="eyebrow__dot"></span>Web Developer · Dostępny na nowe projekty</p>
+      <h1 class="hero__name">Daniel<br>Prajsnar</h1>
+      <p class="hero__lead">
+        Tworzę nowoczesne strony internetowe dla firm, szkół<br class="hero__br">
+        i lokalnych organizacji.
+      </p>
+      <div class="hero__actions">
+        <a href="#kontakt" class="btn btn--primary">Kontakt</a>
+        <a href="#projekty" class="btn btn--ghost">Moje projekty</a>
+      </div>
+    </div>
+    <div class="hero__scroll-hint" aria-hidden="true">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SEKCJA PROJEKTY -->
+  <!-- ============================================ -->
+  <section id="projekty" class="section projects">
+    <div class="section__header">
+      <h2 class="section__title">Projekty</h2>
+    </div>
+
+    <div class="projects__grid">
+
+      <!-- ============================================================ -->
+      <!-- SZABLON KARTY PROJEKTU — KOPIUJ TEN CAŁY BLOK, ABY DODAĆ NOWY  -->
+      <!-- PROJEKT. Zmień tylko: href, img src/alt, status (dodaj/usuń   -->
+      <!-- klasę "is-progress"), nazwę i opis. Nic w JS nie musisz       -->
+      <!-- dotykać — karta działa od razu po wklejeniu.                 -->
+      <!-- ============================================================ -->
+      <a class="project-card" href="https://projektprzedszkola.infinityfreeapp.com/" target="_blank" rel="noopener noreferrer">
+        <div class="project-card__media">
+          <img src="serafitki.png" alt="Strona internetowa przedszkola">
+          <div class="project-card__bar">
+            <span class="project-card__name">Przedszkole Serafitek</span>
+            <span class="project-card__status">W trakcie</span>
+          </div>
+        </div>
+        <p class="project-card__desc">
+Strona internetowa dla przedszkola z indywidualnie zaprojektowanym panelem administracyjnym, systemem zarządzania treścią, galerią zdjęć, formularzami oraz rozbudowanymi podstronami dla rodziców.        </p>
+      </a>
+      <!-- KONIEC SZABLONU KARTY PROJEKTU -->
+
+      <!-- Karta 2 — przykład statusu "W trakcie" (dodaj klasę is-progress do project-card__status) -->
+      <a class="project-card" href="https://danie11o.github.io/putk/" target="_blank" rel="noopener noreferrer">
+        <div class="project-card__media">
+          <img src="utkawarie.png" alt="Projekt szkolny">
+          <div class="project-card__bar">
+            <span class="project-card__name">Awarie i usterki sprzętu komputerowego - Projekt</span>
+            <span class="project-card__status is-progress">Ukończone</span>
+          </div>
+        </div>
+        <p class="project-card__desc">
+          Serwis edukacyjny poświęcony analizie usterek dysków SSD i pamięci USB. Zawiera bazę wiedzy o awariach sprzętowych oraz praktyczne porady z zakresu profilaktyki danych..
+        </p>
+      </a>
+
+      <a class="project-card" href="https://danie11o.github.io/bazy/" target="_blank" rel="noopener noreferrer">
+        <div class="project-card__media">
+          <img src="bazy.png" alt="Projekt szkolny">
+          <div class="project-card__bar">
+            <span class="project-card__name">Bazy Danych</span>
+            <span class="project-card__status">Ukończone</span>
+          </div>
+        </div>
+        <p class="project-card__desc">
+          Edukacyjny moduł poświęcony teorii baz danych. Zawiera omówienie podstawowych pojęć, modeli relacyjnych oraz roli i funkcji systemów zarządzania relacyjnymi bazami danych (DBMS).
+        </p>
+      </a>
+
+      <a class="project-card" href="https://danie11o.github.io/utk/" target="_blank" rel="noopener noreferrer">
+        <div class="project-card__media">
+          <img src="utk.png" alt="Cyfrowe menu kawiarni z kodem QR">
+          <div class="project-card__bar">
+            <span class="project-card__name">komputer od środka</span>
+            <span class="project-card__status is-progress">Ukończone</span>
+          </div>
+        </div>
+        <p class="project-card__desc">
+          Interaktywny przewodnik po budowie komputera. Witryna umożliwia klikanie w poszczególne podzespoły na zdjęciu, aby poznać ich szczegółowe parametry, funkcje oraz zasady działania.
+        </p>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SEKCJA O MNIE -->
+  <!-- ============================================ -->
+  <section id="o-mnie" class="section about">
+    <div class="about__inner">
+      <div class="section__header">
+        <p class="section__eyebrow">Kim jestem</p>
+        <h2 class="section__title">O mnie</h2>
+      </div>
+      <p class="about__text">
+        Nazywam się Daniel i tworzę nowoczesne strony internetowe dla firm, szkół oraz lokalnych organizacji. Skupiam się na przejrzystym designie, szybkości działania i rozwiązaniach dopasowanych do konkretnych potrzeb.
+
+Każdy projekt traktuję indywidualnie — od pomysłu i projektu graficznego po wdrożenie gotowej strony. Zależy mi na tym, aby tworzyć strony, które nie tylko dobrze wyglądają, ale również są wygodne w użytkowaniu i skutecznie realizują swoje zadanie.
+
+Stale rozwijam swoje umiejętności i śledzę nowe rozwiązania, dzięki czemu mogę tworzyć nowoczesne i dopracowane projekty.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SEKCJA KONTAKT -->
+  <!-- ============================================ -->
+  <section id="kontakt" class="section contact">
+    <div class="contact__inner">
+      <div class="section__header section__header--center">
+        <p class="section__eyebrow">Porozmawiajmy</p>
+        <h2 class="section__title">Kontakt</h2>
+        <p class="contact__lead">Masz pomysł na stronę? Napisz — odpowiadam szybko.</p>
+      </div>
+
+      <div class="contact__links">
+        <button type="button" class="contact__link" id="email-copy" data-email="danielprajsnar00@gmail.com">
+          <span class="contact__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 6.5L11.06 12.5C11.62 12.93 12.38 12.93 12.94 12.5L21 6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="3" y="5" width="18" height="14" rx="2.2" stroke="currentColor" stroke-width="1.6"/>
+            </svg>
+          </span>
+          <span class="contact__text">
+            <span class="contact__label">E-mail</span>
+            <span class="contact__value">danielprajsnar00@gmail.com</span>
+          </span>
+        </button>
+
+        <a href="https://www.instagram.com/daniel_web_pf/" target="_blank" rel="noopener noreferrer" class="contact__link"> 
+          <span class="contact__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" stroke-width="1.6"/>
+              <circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.6"/>
+              <circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/>
+            </svg>
+          </span>
+          <span class="contact__text">
+            <span class="contact__label">Instagram</span>
+            <span class="contact__value">@daniel_web_pf</span>  
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================================ -->
+<!-- STOPKA -->
+<!-- ============================================ -->
+<footer class="footer">
+  <p>&copy; <span id="rok-stopka"></span> Daniel Prajsnar. Wszelkie prawa zastrzeżone.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
